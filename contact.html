@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Protec Asphalte</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">
+          <img src="Logo.jpg.webp" alt="Logo Protec Asphalte">
+        </div>
+        <div class="brand-text">
+          <strong>Protec Asphalte</strong>
+          <span>Revêtement scellant asphalte</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="projets.html">Nos réalisations</a>
+        <a href="avis.html">Avis</a>
+        <a href="abonnement.html">Abonnement</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="contact-wrap">
+
+          <div class="contact-card">
+            <span class="tag">Contact</span>
+
+            <h2 style="font-size: clamp(2rem, 4vw, 3.1rem); line-height: 1; margin: 18px 0; letter-spacing: -0.04em;">
+              Parlons de votre projet
+            </h2>
+
+            <p>
+              Une question ou besoin d’information rapide ?  
+              Contactez-nous directement ou utilisez le formulaire.  
+              Réponse rapide garantie.
+            </p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <strong>Téléphone</strong><br>
+                <span>514-963-3892</span>
+              </div>
+
+              <div class="contact-item">
+                <strong>Courriel</strong><br>
+                <span>protecasphalte@gmail.com</span>
+              </div>
+
+              <div class="contact-item">
+                <strong>Zone desservie</strong><br>
+                <span>Montréal et environs</span>
+              </div>
+            </div>
+
+            <a href="soumission.html" class="btn btn-primary" style="margin-top:20px;">
+              Demander une soumission
+            </a>
+          </div>
+
+          <div class="contact-card">
+            <h3>Une question rapide ?</h3>
+
+            <form>
+              <div class="grid-2">
+                <input type="text" placeholder="Nom complet" required>
+                <input type="tel" placeholder="Téléphone" required>
+              </div>
+
+              <div class="grid-2">
+                <input type="email" placeholder="Courriel" required>
+                <input type="text" placeholder="Ville">
+              </div>
+
+              <textarea placeholder="Votre message" required></textarea>
+
+              <button type="submit" class="btn btn-primary">
+                Envoyer le message
+              </button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Protec Asphalte</h4>
+      <p>
+        Revêtement scellant, entretien et amélioration d’entrées à Montréal et environs.
+      </p>
+    </div>
+
+    <div>
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="projets.html">Nos réalisations</a></li>
+        <li><a href="avis.html">Avis</a></li>
+        <li><a href="abonnement.html">Abonnement</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h4>Coordonnées</h4>
+      <ul>
+        <li>514-963-3892</li>
+        <li>protecasphalte@gmail.com</li>
+        <li>Montréal et environs</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script>
+  const heroBg = document.querySelector(".hero-bg");
+  const pageBg = document.querySelector(".page-bg");
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+
+    if (heroBg) {
+      heroBg.style.transform = `translateY(${scrollY * 0.4}px) scale(1.1)`;
+    }
+
+    if (pageBg) {
+      pageBg.style.transform = `translateY(${scrollY * 0.2}px) scale(1.1)`;
+    }
+  });
+</script>
+</body>
+</html>

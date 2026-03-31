@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avis | Protec Asphalte</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <div class="brand-logo">
+        <img src="Logo.jpg.webp" alt="Logo Protec Asphalte" />
+      </div>
+      <div class="brand-text">
+        <strong>Protec Asphalte</strong>
+        <span>Revêtement scellant asphalte</span>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Nos réalisations</a>
+      <a href="avis.html">Avis</a>
+      <a href="abonnement.html">Abonnement</a>
+      <a href="contact.html">Contact</a>
+      <a href="soumission.html">Soumission</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="section">
+  <div class="container">
+
+    <section class="page-hero">
+
+  <div class="page-bg reviews-bg"></div>
+  <div class="page-overlay"></div>
+
+  <div class="container page-content">
+    <h1>Avis</h1>
+    <p>Ce que les propriétaires pensent de notre travail à Montréal et les environs.</p>
+
+  </div>
+
+</section>
+
+    <div class="cards-3">
+
+      <article class="card">
+        <div class="stars">
+  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+</div>
+        <h3>Travail propre et rapide</h3>
+        <p>
+          Très satisfait du résultat. L’entrée a complètement changé d’apparence et le travail a été fait rapidement.
+        </p>
+        <strong>- Martin, Montréal</strong>
+      </article>
+      <div class="review">
+        <div class="stars">
+  <span>★</span><span>★</span><span>★</span><span>★</span><span>
+</div>
+  <h3>Service rapide</h3>
+  <p>Très satisfait, travail efficace et entrée comme neuve.</p>
+  <strong>- David, Terrebonne</strong>
+</div>
+
+      <article class="card">
+        <div class="stars">
+  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+</div>
+        <h3>Service professionnel</h3>
+        <p>
+          Bonne communication, arrivée à l’heure et résultat vraiment propre. Je recommande sans hésiter.
+        </p>
+        <strong>- Julie, Laval</strong>
+      </article>
+
+      <article class="card">
+        <div class="stars">
+  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+</div>
+        <h3>Différence visible</h3>
+        <p>
+          Notre entrée paraissait vieille. Après le traitement, tout est plus net et beaucoup plus beau.
+        </p>
+        <strong>- Karim, Longueuil</strong>
+      </article>
+
+      <div class="review">
+  <div class="stars">★★★★</div>
+  <h3>Résultat comme neuf</h3>
+  <p>Franchement impressionné. L’entrée était vraiment abîmée et après le passage, elle a l’air neuve. Travail propre et rapide.</p>
+  <strong>- David, Terrebonne</strong>
+</div>
+<div class="review">
+  <div class="stars">★★★★★</div>
+  <h3>Service fiable</h3>
+  <p>Très bonne expérience du début à la fin. Communication facile, rendez-vous respecté et résultat impeccable.</p>
+  <strong>- Sophie, Longueuil</strong>
+</div>
+
+      <h2>Prêt à améliorer votre entrée ?</h2>
+<p>Obtenez une soumission rapide en quelques minutes.</p>
+
+<a href="soumission.html" class="btn btn-primary">
+  Demander une soumission
+</a>
+ 
+  </div>
+
+  </div>
+</section>
+
+</main>
+<script>
+  const heroBg = document.querySelector(".hero-bg");
+  const pageBg = document.querySelector(".page-bg");
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+
+    if (heroBg) {
+      heroBg.style.transform = `translateY(${scrollY * 0.4}px) scale(1.1)`;
+    }
+
+    if (pageBg) {
+      pageBg.style.transform = `translateY(${scrollY * 0.2}px) scale(1.1)`;
+    }
+  });
+</script>
+</body>
+</html>

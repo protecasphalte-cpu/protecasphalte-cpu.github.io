@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soumission | Protec Asphalte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">
+        <div class="brand-logo">
+  <img src="Logo.jpg.webp" alt="Logo Protec Asphalte">
+</div>
+
+      <div class="brand-text">
+          <strong>Protec Asphalte</strong>
+          <span>Revêtement scellant asphalte</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="projets.html">Nos réalisations</a>
+        <a href="avis.html">Avis</a>
+        <a href="abonnement.html">Abonnement</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+<main>
+
+  <section class="quote-page">
+    <div class="quote-card">
+      <span class="tag">Soumission</span>
+      <h1>Demande de soumission</h1>
+      <p class="quote-intro">
+        Remplissez ce formulaire en quelques secondes. Nous vous recontactons rapidement avec une soumission claire selon votre projet.
+      </p>
+
+      <form class="quote-form">
+        <label for="categorie">Type de projet</label>
+        <select id="categorie" name="categorie">
+          <option value="Particulier">Particulier</option>
+          <option value="Commercial">Commercial</option>
+        </select>
+
+        <label for="plan">Plan choisi</label>
+        <select id="plan" name="plan">
+          <option value="Essentiel">Essentiel</option>
+          <option value="Pro">Pro</option>
+          <option value="Premium">Premium</option>
+          <option value="Commercial">Commercial / Sur soumission</option>
+        </select>
+
+        <label for="nom">Votre nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+
+        <label for="telephone">Téléphone</label>
+        <input type="tel" id="telephone" name="telephone" placeholder="Votre téléphone" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Votre email" required>
+
+        <button type="submit">Envoyer la demande</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const planParam = params.get("plan");
+
+    const categorieSelect = document.getElementById("categorie");
+    const planSelect = document.getElementById("plan");
+
+    if (planParam) {
+      const planLower = planParam.toLowerCase();
+
+      if (planLower === "commercial") {
+        categorieSelect.value = "Commercial";
+        planSelect.value = "Commercial";
+      } else {
+        categorieSelect.value = "Particulier";
+
+        if (planLower === "essentiel") {
+          planSelect.value = "Essentiel";
+        } else if (planLower === "pro") {
+          planSelect.value = "Pro";
+        } else if (planLower === "premium") {
+          planSelect.value = "Premium";
+        }
+      }
+    }
+
+    categorieSelect.addEventListener("change", function () {
+      if (this.value === "Commercial") {
+        planSelect.value = "Commercial";
+      } else if (planSelect.value === "Commercial") {
+        planSelect.value = "Essentiel";
+      }
+    });
+  </script>
+</main>
+</body>
+</html>

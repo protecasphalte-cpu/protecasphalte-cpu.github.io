@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nos réalisations | Protec Asphalte</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="navbar">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <div class="brand-logo">
+        <img src="Logo.jpg.webp" alt="Logo Protec Asphalte" />
+      </div>
+      <div class="brand-text">
+        <strong>Protec Asphalte</strong>
+        <span>Revêtement scellant asphalte</span>
+      </div>
+    </a>
+
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Nos réalisations</a>
+      <a href="avis.html">Avis</a>
+      <a href="abonnement.html">Abonnement</a>
+      <a href="contact.html">Contact</a>
+      <a href="soumission.html">Soumission</a>
+    </nav>
+  </div>
+</header>
+<section class="page-hero">
+  <div class="page-bg"></div>
+  <div class="page-overlay"></div>
+
+  <div class="container page-content">
+    <h1>Nos réalisations</h1>
+    <p>Découvrez nos projets récents.</p>
+  </div>
+</section>
+
+<main>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+  <div>
+    <span class="tag">Nos réalisations</span>
+    <h2>Avant et après, sans fiction.</h2>
+  </div>
+</div>
+
+    <div class="gallery-grid">
+
+  <article class="gallery-card">
+    <img src="driveway-avant-1.jpg.webp" />
+    <div class="gallery-body">
+      <h3>Projet résidentiel - avant</h3>
+      <p>Entrée propre mais ternie avec une apparence plus pâle avant intervention.</p>
+    </div>
+  </article>
+
+  <article class="gallery-card">
+    <img src="driveway-apres-1.jpg.webp" />
+    <div class="gallery-body">
+      <h3>Projet résidentiel - après</h3>
+      <p>Fini plus riche, uniforme et nettement plus soigné.</p>
+    </div>
+  </article>
+
+  <article class="gallery-card">
+    <img src="driveway-avant-2.jpg.webp" />
+    <div class="gallery-body">
+      <h3>Entrée usée avant intervention</h3>
+      <p>Surface sèche et vieillissante nécessitant un rafraîchissement.</p>
+    </div>
+  </article>
+
+  <article class="gallery-card">
+    <img src="driveway-apres-2.jpg.webp" />
+    <div class="gallery-body">
+      <h3>Entrée transformée</h3>
+      <p>Aspect plus profond, propre et visuellement amélioré.</p>
+    </div>
+  </article>
+
+  <article class="gallery-card">
+    <img src="driveway-avant-3.jpg.webp" />
+    <div class="gallery-body">
+      <h3>Avant nettoyage complet</h3>
+      <p>Présence de mauvaises herbes et surface négligée.</p>
+    </div>
+  </article>
+
+  <article class="gallery-card">
+    <img src="driveway-apres-3.jpg.webp" />
+    <div class="gallery-body">
+      <h3>Après nettoyage et traitement</h3>
+      <p>Entrée nette, uniforme et sans mauvaises herbes.</p>
+    </div>
+  </article>
+
+  <article class="gallery-card">
+    <img src="driveway-avant-4.jpg.webp" />
+    <div class="gallery-body">
+      <h3>Avant traitement</h3>
+      <p>Surface usée avec accumulation de débris.</p>
+    </div>
+  </article>
+
+  <article class="gallery-card">
+    <img src="driveway-apres-4.jpg.webp" />
+    <div class="gallery-body">
+      <h3>Après traitement complet</h3>
+      <p>Finition sombre et propre, meilleure présentation globale.</p>
+    </div>
+  </article>
+
+  <article class="gallery-card">
+    <img src="driveway-maison-neuve.jpg.webp" />
+    <div class="gallery-body">
+      <h3>Maison neuve</h3>
+      <p>Revêtement uniforme qui complète parfaitement la propriété.</p>
+    </div>
+  </article>
+
+</div>
+  </div>
+</section>
+
+</main>
+<script>
+  const heroBg = document.querySelector(".hero-bg");
+  const pageBg = document.querySelector(".page-bg");
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+
+    if (heroBg) {
+      heroBg.style.transform = `translateY(${scrollY * 0.4}px) scale(1.1)`;
+    }
+
+    if (pageBg) {
+      pageBg.style.transform = `translateY(${scrollY * 0.2}px) scale(1.1)`;
+    }
+  });
+</script>
+
+</body>
+</html>
