@@ -9,26 +9,36 @@
 <body>
 
   <header class="navbar">
-    <div class="container nav-wrap">
-      <a href="index.html" class="brand">
-        <div class="brand-logo">
-          <img src="Logo.jpg.webp" alt="Logo Protec Asphalte">
-        </div>
-        <div class="brand-text">
-          <strong>Protec Asphalte</strong>
-          <span>Revêtement scellant asphalte</span>
-        </div>
-      </a>
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <div class="brand-logo">
+        <img src="Logo.jpg.webp" alt="Logo Protec Asphalte" />
+      </div>
+      <div class="brand-text">
+        <strong>Protec Asphalte</strong>
+      </div>
+    </a>
 
-      <nav class="nav-links">
-        <a href="index.html">Accueil</a>
-        <a href="projets.html">Nos réalisations</a>
-        <a href="avis.html">Avis</a>
-        <a href="abonnement.html">Abonnement</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="nav-links" id="mobileMenu">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Nos réalisations</a>
+      <a href="avis.html">Avis</a>
+      <a href="abonnement.html">Abonnement</a>
+      <a href="contact.html">Contact</a>
+      <a href="soumission.html">Soumission</a>
+      <a href="carriere.html">Carrière</a>
+      <a href="soumission.html" class="btn btn-primary nav-mobile-btn">Soumission gratuite</a>
+    </nav>
+
+    <a href="soumission.html" class="btn btn-primary nav-desktop-btn">Soumission gratuite</a>
+  </div>
+</header>
 
   <main>
     <section class="section" id="contact">
@@ -141,6 +151,16 @@
       pageBg.style.transform = `translateY(${scrollY * 0.2}px) scale(1.1)`;
     }
   });
+</script>
+  <script>
+  const menuToggle = document.getElementById("menuToggle");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener("click", function () {
+      mobileMenu.classList.toggle("open");
+    });
+  }
 </script>
 </body>
 </html>
