@@ -1053,49 +1053,6 @@ select:focus {
     padding: 22px;
   }
 }
-/* MENU MOBILE */
-.menu-toggle {
-  display: none;
-  font-size: 26px;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  position: relative;
-  z-index: 2001;
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    position: sticky;
-    top: 0;
-    z-index: 2000;
-  }
-
-  .hero-overlay {
-    pointer-events: none;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 82px;
-    left: 0;
-    width: 100%;
-    background: #111;
-    padding: 20px;
-    z-index: 1999;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
 
   .nav-wrap > .btn.btn-primary {
     display: none;
