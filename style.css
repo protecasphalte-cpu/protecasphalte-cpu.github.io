@@ -994,15 +994,6 @@ select:focus {
 }
 
 @media (max-width: 820px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-  }
-
-  .nav-links.active {
-    display: flex;
-  }
-
   .hero-grid,
   .cards-3,
   .reviews-grid,
