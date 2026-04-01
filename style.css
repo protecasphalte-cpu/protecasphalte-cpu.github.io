@@ -1318,3 +1318,32 @@ select:focus {
     overflow-x: hidden;
   }
 }
+@media (max-width: 768px) {
+
+  .hero-content {
+    overflow: visible !important;
+  }
+
+  .hero-grid {
+    display: block !important;
+  }
+
+  .hero-copy {
+    width: 100% !important;
+  }
+
+  .hero-actions {
+    display: flex !important;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .hero-actions .btn {
+    display: flex !important;
+    width: 100%;
+    justify-content: center;
+  }
+
+}
