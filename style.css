@@ -1422,3 +1422,17 @@ select:focus {
     display: flex;
   }
 }
+.nav-links {
+  z-index: 9999;
+}
+
+.menu-toggle {
+  z-index: 10000;
+}
+.navbar {
+  position: sticky;
+  z-index: 10000;
+}
+.hero-overlay {
+  pointer-events: none;
+}
