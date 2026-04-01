@@ -182,19 +182,27 @@ Votre entrée est traitée sans tracas et avec un résultat durable.</p>
               </div>
             </div>
 
-            <form>
-              <div class="grid-2">
-                <input type="text" placeholder="Nom complet">
-                <input type="tel" placeholder="Téléphone">
-              </div>
-              <div class="grid-2">
-                <input type="email" placeholder="Courriel">
-                <input type="text" placeholder="Ville">
-              </div>
-              <input type="text" placeholder="Disponibilités">
-              <textarea placeholder="Parlez un peu de vous, de votre expérience en vente et pourquoi vous voulez rejoindre Protec Asphalte"></textarea>
-              <button type="submit" class="btn btn-primary">Envoyer ma candidature</button>
-            </form>
+            <form action="https://formspree.io/f/xgopybgk" method="POST">
+
+  <input type="hidden" name="_subject" value="Nouvelle candidature - Protec Asphalte">
+  <input type="text" name="_gotcha" style="display:none">
+
+  <div class="grid-2">
+    <input type="text" name="nom" placeholder="Nom complet" required>
+    <input type="tel" name="telephone" placeholder="Téléphone" required>
+  </div>
+
+  <div class="grid-2">
+    <input type="email" name="email" placeholder="Courriel" required>
+    <input type="text" name="ville" placeholder="Ville">
+  </div>
+
+  <input type="text" name="disponibilites" placeholder="Disponibilités">
+
+  <textarea name="message" placeholder="Parlez un peu de vous, de votre expérience en vente et pourquoi vous voulez rejoindre Protec Asphalte"></textarea>
+
+  <button type="submit" class="btn btn-primary">Envoyer ma candidature</button>
+</form>
           </div>
         </div>
       </div>
