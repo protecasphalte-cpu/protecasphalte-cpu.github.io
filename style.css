@@ -1105,3 +1105,7 @@ select:focus {
     display: none;
   }
 }
+.menu-toggle {
+  z-index: 9999;
+  position: relative;
+}
