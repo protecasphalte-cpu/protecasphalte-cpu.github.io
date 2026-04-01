@@ -1109,3 +1109,71 @@ select:focus {
   z-index: 9999;
   position: relative;
 }
+@media (max-width: 768px) {
+  .hero-grid,
+  .section-head,
+  .pricing-grid,
+  .cards-3,
+  .plans-grid,
+  .abonnement-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-content,
+  .hero-copy,
+  .quote-box,
+  .section-head > div,
+  .section-head p {
+    width: 100%;
+  }
+
+  .hero-copy h1,
+  .page-hero-content h1,
+  .section-head h2 {
+    font-size: 2.5rem !important;
+    line-height: 1.05;
+  }
+
+  .hero-copy p,
+  .page-hero-content p,
+  .section-head p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .tag {
+    font-size: 0.95rem;
+    padding: 12px 18px;
+  }
+
+  .pricing-grid,
+  .plans-grid,
+  .abonnement-grid {
+    gap: 20px;
+  }
+
+  .card,
+  .plan-card,
+  .pricing-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .plan-card h3,
+  .pricing-card h3 {
+    font-size: 1.8rem;
+  }
+
+  .plan-card .price,
+  .pricing-card .price {
+    font-size: 2.4rem;
+  }
+
+  .section,
+  .page-hero,
+  .hero {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
