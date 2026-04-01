@@ -18,6 +18,7 @@
           <strong>Protec Asphalte</strong>
         </div>
       </a>
+      <button class="menu-toggle">☰</button>
 
  <nav class="nav-links">
   <a href="index.html">Accueil</a>
@@ -266,5 +267,13 @@ Votre entrée est traitée sans tracas et avec un résultat durable.</p>
     bg.style.transform = `translateY(${scrollY * 0.4}px) scale(1.1)`;
   });
 </script>
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const nav = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+</script>          
 </body>
 </html>
