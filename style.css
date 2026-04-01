@@ -1049,3 +1049,33 @@ select:focus {
     padding: 22px;
   }
 }
+/* MENU MOBILE */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: #111;
+    padding: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
