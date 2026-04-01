@@ -1241,3 +1241,80 @@ select:focus {
     padding-right: 20px;
   }
 }
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .subscription-head {
+    display: block !important;
+  }
+
+  .subscription-head > div,
+  .subscription-head > p {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .subscription-head h2 {
+    font-size: 2.2rem !important;
+    line-height: 1.05 !important;
+    margin-bottom: 14px !important;
+  }
+
+  .subscription-head p {
+    font-size: 1rem !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+  }
+
+  .plans-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+  }
+
+  .plans-grid .plan {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+  }
+
+  .plans-grid .price {
+    font-size: 2.2rem !important;
+    line-height: 1.1 !important;
+    word-break: break-word;
+  }
+
+  .subscription-banner-wrap {
+    display: block !important;
+  }
+
+  .subscription-banner-image,
+  .subscription-banner-copy {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .subscription-banner-image img {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  .subscription-banner-copy {
+    margin-top: 20px !important;
+  }
+
+  .subscription-banner-copy h2 {
+    font-size: 2rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .section,
+  .subscription-plans,
+  .subscription-banner {
+    overflow-x: hidden;
+  }
+}
