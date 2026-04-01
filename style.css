@@ -1427,3 +1427,21 @@ select:focus {
 .hero-overlay {
   pointer-events: none;
 }
+.navbar {
+  z-index: 99999;
+}
+
+.nav-links {
+  z-index: 99999;
+}
+
+.menu-toggle {
+  z-index: 100000;
+}
+.hero,
+.hero-content,
+.section,
+main {
+  position: relative;
+  z-index: 1;
+}
