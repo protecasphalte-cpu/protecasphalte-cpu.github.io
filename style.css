@@ -1101,7 +1101,7 @@ select:focus {
     display: flex;
   }
 
-  .btn.btn-primary {
+  .nav-wrap > .btn.btn-primary {
     display: none;
   }
 }
