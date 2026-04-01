@@ -994,8 +994,14 @@ select:focus {
 }
 
 @media (max-width: 820px) {
+
   .nav-links {
     display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.active {
+    display: flex;
   }
 
   .hero-grid,
@@ -1008,6 +1014,8 @@ select:focus {
   .grid-2 {
     grid-template-columns: 1fr;
   }
+
+}
 
   .section {
     padding: 72px 0;
