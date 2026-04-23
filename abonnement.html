@@ -1,62 +1,7 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abonnements | Protec Asphalte</title>
-
-  <link rel="stylesheet" href="style.css">
-</head>
-
-  <body>
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="container nav-wrap">
-    <a href="index.html" class="brand">
-      <div class="brand-logo">
-        <img src="Logo.jpg.webp" alt="Logo Protec Asphalte" />
-      </div>
-      <div class="brand-text">
-        <strong>Protec Asphalte</strong>
-      </div>
-    </a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-
-    <nav class="nav-links" id="mobileMenu">
-      <a href="index.html#accueil">Accueil</a>
-  <a href="index.html#realisations">Nos réalisations</a>
-  <a href="index.html#avis">Avis</a>
-  <a href="index.html#abonnements">Abonnement</a>
-  <a href="index.html#contact">Contact</a>
-  <a href="index.html#soumission">Soumission</a>
-  <a href="index.html#carriere">Carrière</a>
-</nav>
-
-    <a href="soumission.html" class="btn btn-primary nav-desktop-btn">Soumission gratuite</a>
-  </div>
-</header>
-
-<!-- HERO PARALLAX LOGO -->
-<section class="subscription-plans section">
-  <div class="container">
-    <div class="section-head subscription-head">
-      <div>
-        <span class="tag">Abonnement</span>
-        <h2>Choisissez le niveau d’entretien qui correspond à votre entrée.</h2>
-      </div>
-      <p>
-        Des options simples, claires et pensées pour garder votre asphalte propre,
-        protégé et beau plus longtemps.
-      </p>
-    </div>
-
 <div class="plans-grid">
-  <article class="plan bronze">
+
+  <!-- ESSENTIEL -->
+  <article class="plan bronze" onclick="window.open('https://buy.stripe.com/test_5kQeVd6Rl8iVduNdWlafS02', '_blank')">
     <h3>Essentiel</h3>
     <div class="price">21$/Mois</div>
     <p>Pour une entrée résidentielle avec entretien simple et apparence ravivée.</p>
@@ -67,12 +12,11 @@
       <li>1 nettoyage / année inclus</li>
       <li>Soumission rapide</li>
     </ul>
-    <a href="https://buy.stripe.com/test_5kQeVd6Rl8iVduNdWlafS02" target="_blank" class="btn btn-primary">
-      S’abonner
-    </a>
+    <span class="btn btn-primary">S’abonner</span>
   </article>
 
-  <article class="plan silver featured">
+  <!-- PRO -->
+  <article class="plan silver featured" onclick="window.open('https://buy.stripe.com/test_5kQeVd6Rl8iVduNdWlafS02', '_blank')">
     <span class="plan-badge">Le plus populaire</span>
     <h3>Plan Pro</h3>
     <div class="price">29$/Mois</div>
@@ -85,12 +29,11 @@
       <li>Service prioritaire</li>
       <li>Suivi client simplifié</li>
     </ul>
-    <a href="https://buy.stripe.com/test_5kQeVd6Rl8iVduNdWlafS02" target="_blank" class="btn btn-primary">
-      S’abonner
-    </a>
+    <span class="btn btn-primary">S’abonner</span>
   </article>
 
-  <article class="plan gold">
+  <!-- PREMIUM -->
+  <article class="plan gold" onclick="window.open('https://buy.stripe.com/test_5kQeVd6Rl8iVduNdWlafS02', '_blank')">
     <h3>Plan Premium</h3>
     <div class="price">39$/Mois</div>
     <p>Le plan idéal pour une entrée toujours impeccable, avec un entretien plus complet et un meilleur suivi.</p>
@@ -103,57 +46,7 @@
       <li>Suivi client simplifié</li>
       <li>Service VIP (priorité + urgence)</li>
     </ul>
-    <a href="https://buy.stripe.com/test_5kQeVd6Rl8iVduNdWlafS02" target="_blank" class="btn btn-primary">
-      S’abonner
-    </a>
+    <span class="btn btn-primary">S’abonner</span>
   </article>
+
 </div>
-</section>
-           
-  
-
-          <section class="subscription-banner section">
-  <div class="container subscription-banner-wrap">
-    <div class="subscription-banner-image">
-      <img src="long-driveway-abbonnement.jpg.webp" alt="Grande entrée résidentielle entretenue">
-    </div>
-    <div class="subscription-banner-copy">
-      <span class="tag">Entretien sur mesure</span>
-      <h2>Un plan adapté à votre réalité</h2>
-      <p>
-        Pour les grandes entrées, besoins spécifiques ou entretiens récurrents,
-        nous proposons une formule personnalisée selon votre propriété.
-      </p>
-      <a href="soumission.html?plan=Sur mesure" class="btn btn-primary">Demander une soumission</a>
-    </div>
-  </div>
-</section>
-          
-<script>
-  const heroBg = document.querySelector(".hero-bg");
-  const pageBg = document.querySelector(".page-bg");
-
-  window.addEventListener("scroll", () => {
-    const scrollY = window.scrollY;
-
-    if (heroBg) {
-      heroBg.style.transform = `translateY(${scrollY * 0.4}px) scale(1.1)`;
-    }
-
-    if (pageBg) {
-      pageBg.style.transform = `translateY(${scrollY * 0.2}px) scale(1.1)`;
-    }
-  });
-</script>
-<script>
-  const menuToggle = document.getElementById("menuToggle");
-  const mobileMenu = document.getElementById("mobileMenu");
-
-  if (menuToggle && mobileMenu) {
-    menuToggle.addEventListener("click", function () {
-      mobileMenu.classList.toggle("open");
-    });
-  }
-</script>
-</body>
-</html>
