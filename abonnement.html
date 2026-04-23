@@ -1,52 +1,134 @@
-<div class="plans-grid">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abonnements | Protec Asphalte</title>
 
-  <!-- ESSENTIEL -->
-  <article class="plan bronze" onclick="window.open('https://buy.stripe.com/test_5kQeVd6Rl8iVduNdWlafS02', '_blank')">
-    <h3>Essentiel</h3>
-    <div class="price">21$/Mois</div>
-    <p>Pour une entrée résidentielle avec entretien simple et apparence ravivée.</p>
-    <ul>
-      <li>Revêtement scellant (1x / an)</li>
-      <li>Inspection annuelle</li>
-      <li>Rabais 10% réparations</li>
-      <li>1 nettoyage / année inclus</li>
-      <li>Soumission rapide</li>
-    </ul>
-    <span class="btn btn-primary">S’abonner</span>
-  </article>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  <!-- PRO -->
-  <article class="plan silver featured" onclick="window.open('https://buy.stripe.com/test_5kQeVd6Rl8iVduNdWlafS02', '_blank')">
-    <span class="plan-badge">Le plus populaire</span>
-    <h3>Plan Pro</h3>
-    <div class="price">29$/Mois</div>
-    <p>Pour les propriétaires qui veulent une entrée impeccable et un service sans compromis.</p>
-    <ul>
-      <li>1 Scellant / an</li>
-      <li>1 inspection / an</li>
-      <li>20% rabais réparations</li>
-      <li>Nettoyage complet 1x / an (Printemps)</li>
-      <li>Service prioritaire</li>
-      <li>Suivi client simplifié</li>
-    </ul>
-    <span class="btn btn-primary">S’abonner</span>
-  </article>
+  <body>
 
-  <!-- PREMIUM -->
-  <article class="plan gold" onclick="window.open('https://buy.stripe.com/test_5kQeVd6Rl8iVduNdWlafS02', '_blank')">
-    <h3>Plan Premium</h3>
-    <div class="price">39$/Mois</div>
-    <p>Le plan idéal pour une entrée toujours impeccable, avec un entretien plus complet et un meilleur suivi.</p>
-    <ul>
-      <li>1 Scellant / an</li>
-      <li>2 inspections / an</li>
-      <li>30% rabais réparations</li>
-      <li>Nettoyage complet 2x / an (printemps et automne)</li>
-      <li>Service prioritaire</li>
-      <li>Suivi client simplifié</li>
-      <li>Service VIP (priorité + urgence)</li>
-    </ul>
-    <span class="btn btn-primary">S’abonner</span>
-  </article>
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <div class="brand-logo">
+        <img src="Logo.jpg.webp" alt="Logo Protec Asphalte" />
+      </div>
+      <div class="brand-text">
+        <strong>Protec Asphalte</strong>
+      </div>
+    </a>
+<button class="menu-toggle">☰</button>
+    <nav class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Nos réalisations</a>
+      <a href="avis.html">Avis</a>
+      <a href="abonnement.html">Abonnement</a>
+      <a href="contact.html">Contact</a>
+      <a href="soumission.html">Soumission</a>
+    </nav>
+  </div>
+</header>
 
-</div>
+<!-- HERO PARALLAX LOGO -->
+<section class="subscription-plans section">
+  <div class="container">
+    <div class="section-head subscription-head">
+      <div>
+        <span class="tag">Abonnement</span>
+        <h2>Choisissez le niveau d’entretien qui correspond à votre entrée.</h2>
+      </div>
+      <p>
+        Des options simples, claires et pensées pour garder votre asphalte propre,
+        protégé et beau plus longtemps.
+      </p>
+    </div>
+
+    <div class="plans-grid">
+      <article class="plan bronze" onclick="location.href='soumission.html?plan=Essentiel'">
+        <h3>Essentiel</h3>
+        <div class="price">199$/année</div>
+        <p>Pour une entrée résidentielle avec entretien simple et apparence ravivée.</p>
+        <ul>
+          <li>Revêtement scellant (1x / an)</li>
+          <li>Inspection annuelle</li>
+          <li>Rabais 10% réparations</li>
+          <li>1 nettoyage / année inclus</li>
+          <li>Soumission rapide</li>
+        </ul>
+      </article>
+
+      <article class="plan silver featured" onclick="location.href='soumission.html?plan=Pro'">
+        <span class="plan-badge">Le plus populaire</span>
+        <h3>Plan Pro</h3>
+        <div class="price">349$/année</div>
+        <p>Pour les propriétaires qui veulent une entrée impeccable et un service sans compromis.</p>
+        <ul>
+          <li>1 Scellant / an</li>
+          <li>1 inspection / an</li>
+          <li>20% rabais réparations</li>
+          <li>Nettoyage complet 1x / an (Printemps)</li>
+          <li>Service prioritaire</li>
+          <li>Suivi client simplifié</li>
+        </ul>
+      </article>
+
+      <article class="plan gold" onclick="location.href='soumission.html?plan=Premium'">
+        <h3>Plan Premium</h3>
+        <div class="price">449$/année</div>
+        <p>Le plan idéal pour une entrée toujours impeccable, avec un entretien plus complet et un meilleur suivi.</p>
+        <ul>
+          <li>1 Scellant / an</li>
+          <li>2 inspections / an</li>
+          <li>30% rabais réparations</li>
+          <li>Nettoyage complet 2x / an (printemps et automne)</li>
+          <li>Service prioritaire</li>
+          <li>Suivi client simplifié</li>
+          <li>Service VIP (priorité + urgence)</li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+           
+  
+
+          <section class="subscription-banner section">
+  <div class="container subscription-banner-wrap">
+    <div class="subscription-banner-image">
+      <img src="long-driveway-abbonnement.jpg.webp" alt="Grande entrée résidentielle entretenue">
+    </div>
+    <div class="subscription-banner-copy">
+      <span class="tag">Entretien sur mesure</span>
+      <h2>Un plan adapté à votre réalité</h2>
+      <p>
+        Pour les grandes entrées, besoins spécifiques ou entretiens récurrents,
+        nous proposons une formule personnalisée selon votre propriété.
+      </p>
+      <a href="soumission.html?plan=Sur mesure" class="btn btn-primary">Demander une soumission</a>
+    </div>
+  </div>
+</section>
+          
+<script>
+  const heroBg = document.querySelector(".hero-bg");
+  const pageBg = document.querySelector(".page-bg");
+
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+
+    if (heroBg) {
+      heroBg.style.transform = `translateY(${scrollY * 0.4}px) scale(1.1)`;
+    }
+
+    if (pageBg) {
+      pageBg.style.transform = `translateY(${scrollY * 0.2}px) scale(1.1)`;
+    }
+  });
+</script>
+
+</body>
+</html>
