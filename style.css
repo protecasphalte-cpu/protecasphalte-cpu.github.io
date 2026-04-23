@@ -569,7 +569,7 @@ main,
 }
 
 .plan a {
-  pointer-events: none;
+  pointer-events: auto;
 }
 
 .plan.bronze {
